@@ -1,1 +1,10 @@
-// Section components barrel file
+export { default as Hero } from "./Hero";
+export { default as TrustBar } from "./TrustBar";
+export { default as HowItWorks } from "./HowItWorks";
+export { default as InventoryClarity } from "./InventoryClarity";
+export { default as UseCases } from "./UseCases";
+export { default as SocialProof } from "./SocialProof";
+export { default as TestimonialSpotlight } from "./TestimonialSpotlight";
+export { default as PerformanceMetrics } from "./PerformanceMetrics";
+export { default as ProductOverview } from "./ProductOverview";
+export { default as FinalCta } from "./FinalCta";
