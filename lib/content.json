@@ -1,26 +1,205 @@
 {
   "control": {
     "hero": {
-      "headline": "",
-      "subhead": "",
+      "headline": "A New Playbook for Advertiser Growth",
+      "subhead": "Axon is the powerful advertising platform built for the next era of performance marketing. Discover a smarter way to reach your audience.",
       "bullets": [],
-      "cta": ""
+      "cta": "Request Early Access"
+    },
+    "trustBar": {
+      "heading": "Partnered with industry leaders",
+      "logos": ["Spotify", "DoorDash", "Instacart", "Zynga", "Scopely", "Roblox"]
+    },
+    "howItWorks": {
+      "heading": "How Axon Works",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Connect Your Campaigns",
+          "description": "Onboard your existing campaigns and let Axon's platform handle the complexity."
+        },
+        {
+          "number": "02",
+          "title": "AI-Powered Optimization",
+          "description": "Our engine continuously learns and adapts to maximize your advertising performance."
+        },
+        {
+          "number": "03",
+          "title": "Scale With Confidence",
+          "description": "Unlock new growth channels and scale your spend with predictable results."
+        }
+      ]
+    },
+    "finalCta": {
+      "headline": "Ready to Transform Your Advertising?",
+      "subhead": "Join the next generation of performance marketers on Axon.",
+      "cta": "Request Early Access"
     }
   },
   "variant1": {
     "hero": {
-      "headline": "",
-      "subhead": "",
-      "bullets": [],
-      "cta": ""
+      "headline": "AI-Powered Predictive Bidding Across Mobile, Web & CTV",
+      "subhead": "Axon gives performance marketers precise control over premium inventory with real-time bidding, transparent placement, and predictive optimization.",
+      "bullets": [
+        "Predictive bidding engine optimized for ROAS and CPA targets",
+        "Access to 1B+ users across mobile, web, and connected TV",
+        "Full transparency into placement quality and inventory sources",
+        "Real-time campaign analytics and automated budget allocation"
+      ],
+      "cta": "Launch Your Campaign"
+    },
+    "trustBar": {
+      "heading": "Trusted by leading performance teams",
+      "logos": ["Spotify", "DoorDash", "Instacart", "Zynga", "Scopely", "Roblox"]
+    },
+    "howItWorks": {
+      "heading": "Launch in 3 Simple Steps",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Define Your Goals",
+          "description": "Set your CPA or ROAS targets and select your audience segments."
+        },
+        {
+          "number": "02",
+          "title": "AI Optimizes in Real Time",
+          "description": "Axon's predictive engine bids on the highest-value impressions across all channels."
+        },
+        {
+          "number": "03",
+          "title": "Scale What Works",
+          "description": "Automatically shift budget to top-performing placements and scale with confidence."
+        }
+      ]
+    },
+    "inventoryClarity": {
+      "heading": "Premium Inventory Across Every Channel",
+      "subhead": "Reach 1B+ users with full transparency into where your ads run.",
+      "items": [
+        {
+          "channel": "Mobile",
+          "description": "In-app inventory across top-tier apps with SDK-level integration for precise targeting and measurement.",
+          "reach": "650M+ Users"
+        },
+        {
+          "channel": "Web",
+          "description": "Premium display and video placements across high-traffic publisher sites with brand safety controls.",
+          "reach": "280M+ Users"
+        },
+        {
+          "channel": "CTV",
+          "description": "Connected TV inventory across major streaming platforms with household-level targeting.",
+          "reach": "120M+ Households"
+        }
+      ]
+    },
+    "useCases": {
+      "heading": "Built For Performance Marketers",
+      "items": [
+        "User acquisition at scale with predictable CPA",
+        "Retargeting across channels with unified frequency capping",
+        "Brand awareness campaigns with viewability guarantees",
+        "App install campaigns with post-install event optimization",
+        "ROAS-optimized campaigns with real-time bid adjustments",
+        "Cross-channel attribution with unified reporting"
+      ]
+    },
+    "finalCta": {
+      "headline": "Start Reaching the Right Users Today",
+      "subhead": "Launch your first campaign on Axon in minutes.",
+      "cta": "Launch Your Campaign"
     }
   },
   "variant2": {
     "hero": {
-      "headline": "",
-      "subhead": "",
+      "headline": "Advertisers on Axon See 40% Lower CPA on Average",
+      "subhead": "Join thousands of performance marketers who trust Axon to deliver measurable ROI across every channel.",
       "bullets": [],
-      "cta": ""
+      "cta": "Start Growing Your ROI"
+    },
+    "socialProof": {
+      "heading": "Trusted by the World's Top Advertisers",
+      "logos": [
+        "Spotify",
+        "DoorDash",
+        "Instacart",
+        "Zynga",
+        "Scopely",
+        "Roblox",
+        "Moloco",
+        "Liftoff",
+        "Unity",
+        "ironSource"
+      ]
+    },
+    "testimonial": {
+      "quote": "Axon cut our CPA by 35% in the first month while scaling spend 3x. The predictive bidding engine outperforms everything we've tested.",
+      "author": "Sarah Chen",
+      "role": "VP of Growth",
+      "company": "Leading Mobile Gaming Studio"
+    },
+    "performanceMetrics": {
+      "heading": "Results That Speak for Themselves",
+      "metrics": [
+        { "value": "40%", "label": "Average CPA Reduction" },
+        { "value": "3.2x", "label": "Average ROAS" },
+        { "value": "1B+", "label": "Users Reached Monthly" },
+        { "value": "98%", "label": "Client Retention Rate" }
+      ]
+    },
+    "howItWorks": {
+      "heading": "How Axon Delivers Results",
+      "steps": [
+        {
+          "number": "01",
+          "title": "Set Your KPIs",
+          "description": "Tell us your CPA, ROAS, or growth targets and we'll build your strategy."
+        },
+        {
+          "number": "02",
+          "title": "AI Finds the Best Opportunities",
+          "description": "Our engine analyzes billions of signals to bid on the highest-converting impressions."
+        },
+        {
+          "number": "03",
+          "title": "Watch Your ROI Grow",
+          "description": "Track results in real time and see your performance improve week over week."
+        }
+      ]
+    },
+    "productOverview": {
+      "heading": "Everything You Need to Scale",
+      "features": [
+        {
+          "title": "Predictive Bidding",
+          "description": "ML models trained on billions of conversions predict the right bid for every impression in real time."
+        },
+        {
+          "title": "Cross-Channel Reach",
+          "description": "Unified campaigns across mobile, web, and CTV from a single platform with consolidated reporting."
+        },
+        {
+          "title": "Real-Time Analytics",
+          "description": "Live dashboards with granular performance data, attribution insights, and automated alerting."
+        },
+        {
+          "title": "Brand Safety",
+          "description": "Advanced fraud detection and brand safety controls to ensure your ads appear in premium environments."
+        },
+        {
+          "title": "Automated Optimization",
+          "description": "Budget allocation, bid adjustments, and creative rotation handled automatically based on performance signals."
+        },
+        {
+          "title": "Dedicated Support",
+          "description": "Strategic account management with performance reviews, optimization recommendations, and priority support."
+        }
+      ]
+    },
+    "finalCta": {
+      "headline": "Ready to See Better Results?",
+      "subhead": "Join the advertisers already achieving record ROI with Axon.",
+      "cta": "Start Growing Your ROI"
     }
   }
 }
