@@ -38,20 +38,14 @@ export default function Referral({
             </p>
           </div>
           <div className="min-w-max">
-            <a
-              target="_blank"
-              rel="noopener noreferrer"
-              href="https://ads.axon.ai/auth/signup"
+            <Button
+              pageVariant={pageVariant}
+              ctaLocation="footer"
+              variant="primary"
+              size="2xl"
             >
-              <Button
-                pageVariant={pageVariant}
-                ctaLocation="footer"
-                variant="primary"
-                size="2xl"
-              >
-                {cta}
-              </Button>
-            </a>
+              {cta}
+            </Button>
           </div>
         </div>
       </div>

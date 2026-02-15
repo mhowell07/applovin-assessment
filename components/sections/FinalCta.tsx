@@ -51,15 +51,9 @@ export default function FinalCta({
             </div>
             <div className="grid gap-[30px] text-center">
               <div className="min-w-max w-fit m-auto">
-                <a
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  href="https://ads.axon.ai/auth/signup"
-                >
-                  <Button pageVariant={pageVariant} ctaLocation="final" variant="primary" size="2xl">
-                    {cta}
-                  </Button>
-                </a>
+                <Button pageVariant={pageVariant} ctaLocation="final" variant="primary" size="2xl">
+                  {cta}
+                </Button>
               </div>
               <p className="m-0">
                 Need support?{" "}

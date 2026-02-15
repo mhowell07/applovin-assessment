@@ -28,7 +28,7 @@ export default function Button({
     }
 
     if (pageVariant) {
-      window.location.href = getSignupUrl(pageVariant);
+      window.open(getSignupUrl(pageVariant), '_blank', 'noopener,noreferrer');
     }
   };
 
