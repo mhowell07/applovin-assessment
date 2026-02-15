@@ -1,0 +1,26 @@
+{
+  "control": {
+    "hero": {
+      "headline": "",
+      "subhead": "",
+      "bullets": [],
+      "cta": ""
+    }
+  },
+  "variant1": {
+    "hero": {
+      "headline": "",
+      "subhead": "",
+      "bullets": [],
+      "cta": ""
+    }
+  },
+  "variant2": {
+    "hero": {
+      "headline": "",
+      "subhead": "",
+      "bullets": [],
+      "cta": ""
+    }
+  }
+}
