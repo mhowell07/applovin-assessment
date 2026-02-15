@@ -1,6 +1,7 @@
 import {
   Header,
   Hero,
+  InviteOnly,
   Attention,
   InventoryClarity,
   UseCases,
@@ -13,6 +14,7 @@ import {
 import content from "@/lib/content.json";
 
 const data = content.variant1;
+const controlData = content.control;
 const shared = content.shared;
 
 export default function Variant1Page() {
@@ -22,6 +24,7 @@ export default function Variant1Page() {
 
       <Hero
         headline={data.hero.headline}
+        headlineGradient={data.hero.headlineGradient}
         subhead={data.hero.subhead}
         bullets={data.hero.bullets}
         cta={data.hero.cta}
@@ -29,11 +32,20 @@ export default function Variant1Page() {
         videoSrc={data.hero.videoSrc}
       />
 
+      <InviteOnly
+        headline={controlData.inviteOnly.headline}
+        headlineGradient={controlData.inviteOnly.headlineGradient}
+        descriptionBold={controlData.inviteOnly.descriptionBold}
+        description={controlData.inviteOnly.description}
+        videoSrc={controlData.inviteOnly.videoSrc}
+        brandLogos={shared.brandLogos}
+      />
+
       <Attention
-        headline={data.attention.headline}
-        descriptionBold=""
-        description={data.attention.description}
-        videoSrc={data.attention.videoSrc}
+        headline={controlData.attention.headline}
+        descriptionBold={controlData.attention.descriptionBold}
+        description={controlData.attention.description}
+        videoSrc={controlData.attention.videoSrc}
       />
 
       <InventoryClarity
@@ -50,7 +62,7 @@ export default function Variant1Page() {
       <Referral
         headline={shared.referral.headline}
         description={shared.referral.description}
-        cta={shared.referral.cta}
+        cta={data.hero.cta}
         pageVariant="v1"
       />
 

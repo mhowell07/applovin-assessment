@@ -138,9 +138,10 @@
       "cta": "Get started"
     }
   },
-  "variant1": {
+"variant1": {
     "hero": {
-      "headline": "AI-Powered Predictive Bidding Across Mobile, Web & CTV",
+      "headline": "AI-Powered Predictive Bidding",
+      "headlineGradient": "Across Mobile, Web & CTV",
       "subhead": "Axon gives performance marketers precise control over premium inventory with real-time bidding, transparent placement, and predictive optimization.",
       "bullets": [
         "Predictive bidding engine optimized for ROAS and CPA targets",
@@ -148,8 +149,8 @@
         "Full transparency into placement quality and inventory sources",
         "Real-time campaign analytics and automated budget allocation"
       ],
-      "cta": "Launch Your Campaign",
-      "videoSrc": "/videos/LP-header-animation-small.mp4"
+"cta": "Launch Your Campaign",
+      "videoSrc": "/videos/Axon_LP_Video_Landscape.mp4"
     },
     "attention": {
       "headline": "Capture undivided attention",
@@ -200,7 +201,7 @@
       "subhead": "Join thousands of performance marketers who trust Axon to deliver measurable ROI across every channel.",
       "bullets": [],
       "cta": "Start Growing Your ROI",
-      "videoSrc": "/videos/LP-header-animation-small.mp4"
+      "videoSrc": "/videos/Axon_LP_Video_Landscape.mp4"
     },
     "socialProof": {
       "heading": "Trusted by the World's Top Advertisers"
