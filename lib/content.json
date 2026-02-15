@@ -195,9 +195,10 @@
       "cta": "Launch Your Campaign"
     }
   },
-  "variant2": {
+"variant2": {
     "hero": {
-      "headline": "Advertisers on Axon See 40% Lower CPA on Average",
+      "headline": "Advertisers on Axon See",
+      "headlineGradient": "40% Lower CPA on Average",
       "subhead": "Join thousands of performance marketers who trust Axon to deliver measurable ROI across every channel.",
       "bullets": [],
       "cta": "Start Growing Your ROI",

@@ -1,11 +1,11 @@
 import {
   Header,
   Hero,
-  SocialProof,
+  InviteOnly,
   TestimonialSpotlight,
   PerformanceMetrics,
-  Process,
   ProductOverview,
+  Process,
   Referral,
   Testimonials,
   FinalCta,
@@ -14,6 +14,7 @@ import {
 import content from "@/lib/content.json";
 
 const data = content.variant2;
+const controlData = content.control;
 const shared = content.shared;
 
 export default function Variant2Page() {
@@ -23,22 +24,35 @@ export default function Variant2Page() {
 
       <Hero
         headline={data.hero.headline}
+        headlineGradient={data.hero.headlineGradient}
         subhead={data.hero.subhead}
         cta={data.hero.cta}
         pageVariant="v2"
         videoSrc={data.hero.videoSrc}
       />
 
-      <SocialProof
-        heading={data.socialProof.heading}
-        logos={shared.brandLogos.map((l: { src: string; alt: string }) => l.alt)}
+      <InviteOnly
+        headline=""
+        headlineGradient=""
+        descriptionBold=""
+        description=""
+        videoSrc=""
+        brandLogos={shared.brandLogos}
       />
 
-      <TestimonialSpotlight testimonial={data.testimonialSpotlight} />
+      <TestimonialSpotlight 
+        testimonial={data.testimonialSpotlight}
+        image="/testimonials/img-headshot-prose@2x.png"
+      />
 
       <PerformanceMetrics
         heading={data.performanceMetrics.heading}
         metrics={data.performanceMetrics.metrics}
+      />
+
+      <ProductOverview
+        heading={data.productOverview.heading}
+        features={data.productOverview.features}
       />
 
       <Process
@@ -47,15 +61,10 @@ export default function Variant2Page() {
         steps={shared.process.steps}
       />
 
-      <ProductOverview
-        heading={data.productOverview.heading}
-        features={data.productOverview.features}
-      />
-
       <Referral
         headline={shared.referral.headline}
         description={shared.referral.description}
-        cta={shared.referral.cta}
+        cta={data.hero.cta}
         pageVariant="v2"
       />
 

@@ -27,40 +27,48 @@ export default function InviteOnly({
 }: InviteOnlyProps) {
   const logos = [...brandLogos, ...brandLogos];
 
+  const hasContent = headline || videoSrc;
+
   return (
     <section>
-      <div className="max-w-[1296px] mx-auto px-[24px] md:px-[48px] py-[64px] md:py-[80px] lg:py-[120px]">
-        <div className="grid grid-cols-1 gap-y-[48px] md:gap-y-[64px] lg:gap-y-[80px]">
-          <div className="grid gap-[48px] md:gap-[64px] lg:gap-[80px]">
-            <div className="md:max-w-[738px] lg:max-w-[800px] m-auto">
-              <div className="grid gap-[16px]">
-                <h2 className="my-0 text-[28px] leading-[30.8px] md:text-[36px] md:leading-[39.6px] lg:text-[48px] lg:leading-[52.8px] font-[500] text-center">
-                  {headline}{" "}
-                  <br />
-                  <span className="bg-[linear-gradient(90deg,var(--items-primary,#FFF)_0%,var(--items-link,#68A7FF)_100%)] bg-clip-text text-transparent">
-                    {headlineGradient}
-                  </span>
-                </h2>
-                <p className="font-[500] text-[rgba(255,255,255,0.53)] text-center m-0 text-[16px] leading-[24px] lg:text-[18px] lg:leading-[27px]">
-                  <span className="text-white">{descriptionBold}</span>{" "}
-                  {description}
-                </p>
-              </div>
+      <div className={`max-w-[1296px] mx-auto px-[24px] md:px-[48px] ${hasContent ? "py-[64px] md:py-[80px] lg:py-[120px]" : "py-[24px] md:py-[32px]"}`}>
+        <div className={`grid grid-cols-1 ${hasContent ? "gap-y-[48px] md:gap-y-[64px] lg:gap-y-[80px]" : "gap-y-[0px]"}`}>
+          {hasContent && (
+            <div className="grid gap-[48px] md:gap-[64px] lg:gap-[80px]">
+              {headline && (
+                <div className="md:max-w-[738px] lg:max-w-[800px] m-auto">
+                  <div className="grid gap-[16px]">
+                    <h2 className="my-0 text-[28px] leading-[30.8px] md:text-[36px] md:leading-[39.6px] lg:text-[48px] lg:leading-[52.8px] font-[500] text-center">
+                      {headline}{" "}
+                      <br />
+                      <span className="bg-[linear-gradient(90deg,var(--items-primary,#FFF)_0%,var(--items-link,#68A7FF)_100%)] bg-clip-text text-transparent">
+                        {headlineGradient}
+                      </span>
+                    </h2>
+                    <p className="font-[500] text-[rgba(255,255,255,0.53)] text-center m-0 text-[16px] leading-[24px] lg:text-[18px] lg:leading-[27px]">
+                      <span className="text-white">{descriptionBold}</span>{" "}
+                      {description}
+                    </p>
+                  </div>
+                </div>
+              )}
+              {videoSrc && (
+                <div className="max-w-[1200px] w-full mx-auto">
+                  <video
+                    className="w-full h-auto rounded-[16px] object-contain"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                    preload="metadata"
+                  >
+                    <source src={videoSrc} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
+                </div>
+              )}
             </div>
-            <div className="max-w-[1200px] w-full mx-auto">
-              <video
-                className="w-full h-auto rounded-[16px] object-contain"
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="metadata"
-              >
-                <source src={videoSrc} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
-            </div>
-          </div>
+          )}
 
           <div
             className="relative flex overflow-hidden mx-auto"

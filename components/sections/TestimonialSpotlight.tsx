@@ -9,16 +9,31 @@ interface Testimonial {
 
 interface TestimonialSpotlightProps {
   testimonial: Testimonial;
+  image?: string;
 }
 
 export default function TestimonialSpotlight({
   testimonial,
+  image,
 }: TestimonialSpotlightProps) {
   return (
     <SectionWrapper>
       <div className="mx-auto max-w-3xl text-center">
         <div className="rounded-2xl border border-border bg-surface p-10 md:p-14">
-          <span className="mb-6 inline-block text-4xl text-primary">"</span>
+          {image ? (
+            <img
+              alt={testimonial.author}
+              loading="lazy"
+              width="80"
+              height="80"
+              decoding="async"
+              className="w-[80px] h-[80px] rounded-full object-cover mx-auto mb-6"
+              style={{ color: "transparent" }}
+              src={image}
+            />
+          ) : (
+            <span className="mb-6 inline-block text-4xl text-primary">"</span>
+          )}
           <blockquote className="text-xl font-medium leading-relaxed md:text-2xl">
             {testimonial.quote}
           </blockquote>

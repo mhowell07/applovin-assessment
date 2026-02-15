@@ -26,7 +26,7 @@ export default function Hero({
   return (
     <section className="w-full bg-black">
       <div className="max-w-[1296px] mx-auto px-[24px] md:px-[48px] py-[48px] md:py-[64px] lg:py-[80px]">
-        <div className={`m-auto ${pageVariant === "v1" ? "max-w-[1000px]" : "md:max-w-[738px] lg:max-w-[800px]"}`}>
+        <div className={`m-auto ${pageVariant === "v1" || pageVariant === "v2" ? "max-w-[1000px]" : "md:max-w-[738px] lg:max-w-[800px]"}`}>
           <div className="grid gap-[40px]">
             <div className="grid gap-[40px]">
               <div className="grid gap-[16px]">
