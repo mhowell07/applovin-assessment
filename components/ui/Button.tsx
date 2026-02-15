@@ -8,7 +8,7 @@ type CtaLocation = "hero" | "footer" | "final";
 interface ButtonProps {
   children: React.ReactNode;
   variant?: "primary" | "accent" | "secondary";
-  size?: "md" | "2xl";
+  size?: "md" | "2xl" | "header";
   pageVariant?: Variant;
   ctaLocation?: CtaLocation;
   className?: string;
@@ -33,11 +33,12 @@ export default function Button({
   };
 
   const base =
-    "inline-flex items-center justify-center rounded-full font-[600] transition-all duration-200 cursor-pointer";
+    "inline-flex items-center justify-center rounded-[8px] font-[600] transition-all duration-200 cursor-pointer";
 
   const sizes = {
-    md: "text-[14px] leading-[20px] px-[20px] py-[8px]",
-    "2xl": "text-[18px] leading-[27px] px-[40px] py-[16px]",
+    md: "text-[14px] leading-[20px] px-[16px] py-[12px]",
+    "2xl": "text-[18px] leading-[27px] px-[16px] py-[12px]",
+    header: "text-[14px] leading-[20px] px-[12px] py-[4px]",
   };
 
   const variants = {

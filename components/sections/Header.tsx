@@ -36,7 +36,7 @@ export default function Header({ pageVariant }: HeaderProps) {
           >
             Log in
           </a>
-          <Button pageVariant={pageVariant} ctaLocation="hero" variant="primary" size="md">
+          <Button pageVariant={pageVariant} ctaLocation="hero" variant="primary" size="header">
             Sign up
           </Button>
         </div>
