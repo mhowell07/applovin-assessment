@@ -5,7 +5,6 @@ import {
   Attention,
   Referral,
   Process,
-  VideoShowcase,
   Testimonials,
   FinalCta,
   Footer,
@@ -56,11 +55,6 @@ export default function ControlPage() {
         headline={shared.process.headline}
         subhead={shared.process.subhead}
         steps={shared.process.steps}
-      />
-
-      <VideoShowcase
-        headline={data.videoShowcase.headline}
-        videoSrc={data.videoShowcase.videoSrc}
       />
 
       <Testimonials testimonials={shared.testimonials} />
