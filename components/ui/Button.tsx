@@ -7,7 +7,8 @@ type CtaLocation = "hero" | "footer" | "final";
 
 interface ButtonProps {
   children: React.ReactNode;
-  variant?: "primary" | "secondary";
+  variant?: "primary" | "accent" | "secondary";
+  size?: "md" | "2xl";
   pageVariant?: Variant;
   ctaLocation?: CtaLocation;
   className?: string;
@@ -16,6 +17,7 @@ interface ButtonProps {
 export default function Button({
   children,
   variant = "primary",
+  size = "md",
   pageVariant,
   ctaLocation,
   className = "",
@@ -31,19 +33,26 @@ export default function Button({
   };
 
   const base =
-    "inline-flex items-center justify-center rounded-full font-medium transition-all duration-200 cursor-pointer text-base px-8 py-3";
+    "inline-flex items-center justify-center rounded-full font-[600] transition-all duration-200 cursor-pointer";
+
+  const sizes = {
+    md: "text-[14px] leading-[20px] px-[20px] py-[8px]",
+    "2xl": "text-[18px] leading-[27px] px-[40px] py-[16px]",
+  };
 
   const variants = {
     primary:
-      "bg-primary text-white hover:bg-primary-hover shadow-lg shadow-primary/20 hover:shadow-primary/30",
+      "bg-white text-black hover:bg-white/90",
+    accent:
+      "bg-[#002daf] text-white hover:bg-[#00248a]",
     secondary:
-      "border border-border-light text-foreground hover:bg-surface-raised hover:border-primary/50",
+      "border border-[rgba(255,255,255,0.15)] text-[rgba(255,255,255,0.7)] bg-transparent hover:text-white hover:border-[rgba(255,255,255,0.3)]",
   };
 
   return (
     <button
       onClick={handleClick}
-      className={`${base} ${variants[variant]} ${className}`}
+      className={`${base} ${sizes[size]} ${variants[variant]} ${className}`}
     >
       {children}
     </button>

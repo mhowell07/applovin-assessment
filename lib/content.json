@@ -1,39 +1,133 @@
 {
-  "control": {
-    "hero": {
-      "headline": "A New Playbook for Advertiser Growth",
-      "subhead": "Axon is the powerful advertising platform built for the next era of performance marketing. Discover a smarter way to reach your audience.",
-      "bullets": [],
-      "cta": "Request Early Access"
+  "shared": {
+    "brandLogos": [
+      { "src": "/brand-logos/logo_hello_fresh.svg", "alt": "HelloFresh", "width": 110 },
+      { "src": "/brand-logos/logo_ashley.svg", "alt": "Ashley", "width": 138 },
+      { "src": "/brand-logos/logo_wayfair.svg", "alt": "Wayfair", "width": 120 },
+      { "src": "/brand-logos/logo_prose.svg", "alt": "Prose", "width": 73 },
+      { "src": "/brand-logos/logo_fashionnova.svg", "alt": "Fashion Nova", "width": 135 },
+      { "src": "/brand-logos/logo_gymshark.svg", "alt": "Gymshark", "width": 118 },
+      { "src": "/brand-logos/logo_squatch.svg", "alt": "Squatch", "width": 88 },
+      { "src": "/brand-logos/logo_halara.svg", "alt": "Halara", "width": 81 },
+      { "src": "/brand-logos/logo_quince.svg", "alt": "Quince", "width": 96 }
+    ],
+    "testimonials": [
+      {
+        "name": "Yariv Citron",
+        "role": "Co-Founder & CMO",
+        "company": "MAËLYS",
+        "headline": "MAËLYS scaled to $200k/day spend within one week of launch",
+        "quote": "When we saw Axon's performance exceeding our goals, we didn't hesitate to scale—and Axon delivered. It was exciting to see that increasing spend translated directly into profitable growth at greater scale."
+      },
+      {
+        "name": "Matt Fey",
+        "role": "Marketing Director",
+        "company": "Portland Leather",
+        "headline": "Portland Leather boosted purchases by 130k+",
+        "quote": "Axon is now one of our largest paid sources of new customers. The fact that this performance is validated across third party platforms gives us a lot of confidence in AppLovin as an incremental channel."
+      },
+      {
+        "name": "John Carter",
+        "role": "Paid Media Manager",
+        "company": "Home Chef",
+        "headline": "Home Chef makes Axon one of their 3 biggest channels",
+        "quote": "Axon was able to absorb budget and scale really quickly. Within a six-month time frame, Axon went from basically a new channel that we were experimenting with to one of our three largest channels in terms of spend. We also recently conducted an incrementality study and have seen really strong incremental results."
+      },
+      {
+        "name": "Connor Rolain",
+        "role": "Head of Growth",
+        "company": "HexClad",
+        "headline": "HexClad drove $1M+ incremental revenue in 3 weeks",
+        "quote": "We use a very critical eye when evaluating any new addition to our marketing mix to make sure it's driving value we wouldn't get elsewhere. Our incrementality test proved beyond a doubt that Axon is not only driving net-new growth, but doing so far more efficiently than we expected."
+      },
+      {
+        "name": "Tom Sagi",
+        "role": "CEO",
+        "company": "Plateful",
+        "headline": "Plateful scaled to $40k+/day spend at a consistent ROAS",
+        "quote": "Everything changed for our business when Axon entered the picture. As a bootstrapped business, every ad dollar must drive revenue. Maintaining the same ROAS while scaling from $4k/day to $40k/day was incredible. Axon is, without question, our most important marketing channel."
+      },
+      {
+        "name": "Margot Sidman",
+        "role": "Director of Acquisition Marketing",
+        "company": "Prose",
+        "headline": "Prose achieved a 65% lower CPIA with Axon",
+        "quote": "We hold our marketing channels to high standards—they need to truly move the needle for our business, not just look good in attribution reports. Our test with Haus confirmed that Axon exceeds that bar, outperforming our goals and driving incremental growth."
+      },
+      {
+        "name": "Gillian Bell",
+        "role": "Chief Revenue & Growth Officer",
+        "company": "Comfrt",
+        "headline": "Comfrt sold 400k+ hoodies with Axon",
+        "quote": "This past year was transformative for Comfrt. We achieved record-breaking growth, and Axon was instrumental in enabling that scale. Their platform gave us the speed and flexibility to bring hundreds of video assets to market seamlessly, capture millions in incremental revenue, and meet demand we otherwise would have left untapped."
+      },
+      {
+        "name": "Jared Brody",
+        "role": "EVP Marketing",
+        "company": "Resident Home",
+        "headline": "Resident Home drove thousands of purchases with $1700+ AOV",
+        "quote": "I would have bet my job that we wouldn't be able to sell mattresses in mobile games. But we were able to, and I honestly was not expecting the strong results we saw. Axon has kept growing and growing within our media mix, and it's become a core part of our strategy."
+      }
+    ],
+    "referral": {
+      "headline": "Got a referral code?",
+      "description": "This is your head start. Get $5K ad credit when you spend $5K in your first 60 days.",
+      "cta": "Get started"
     },
-    "trustBar": {
-      "heading": "Partnered with industry leaders",
-      "logos": ["Spotify", "DoorDash", "Instacart", "Zynga", "Scopely", "Roblox"]
-    },
-    "howItWorks": {
-      "heading": "How Axon Works",
+    "process": {
+      "headline": "Launch in minutes",
+      "subhead": "Set your goal and Axon will achieve it. Axon automatically targets the right users and shows them the ad most likely to drive a conversion. No complex setup, no expertise needed.",
       "steps": [
         {
-          "number": "01",
-          "title": "Connect Your Campaigns",
-          "description": "Onboard your existing campaigns and let Axon's platform handle the complexity."
+          "number": "Step 1",
+          "title": "Install the Axon Pixel",
+          "description": "Integrate the Axon Pixel through Shopify App Store or Google Tag Manager to get started.",
+          "illustration": "/animated-cards/card-1/illo-card1-pixel.svg"
         },
         {
-          "number": "02",
-          "title": "AI-Powered Optimization",
-          "description": "Our engine continuously learns and adapts to maximize your advertising performance."
+          "number": "Step 2",
+          "title": "Set up your campaign",
+          "description": "Upload your brand assets and set your goals.",
+          "illustration": "/animated-cards/card-2/illo-card2-folder-front.svg"
         },
         {
-          "number": "03",
-          "title": "Scale With Confidence",
-          "description": "Unlock new growth channels and scale your spend with predictable results."
+          "number": "Step 3",
+          "title": "Let Axon do the work",
+          "description": "Axon automatically targets the right user and shows them the ad most likely to drive a conversion.",
+          "illustration": "/animated-cards/card-3/illo-card3-logo.svg"
         }
       ]
+    }
+  },
+  "control": {
+    "hero": {
+      "headline": "Forget best practices.",
+      "headlineGradient": "This is a new playbook.",
+      "subhead": "Transform your business with the most powerful advertising platform in a generation.",
+      "cta": "Get started",
+      "videoSrc": "/videos/Axon_LP_Video_Landscape.mp4"
+    },
+    "inviteOnly": {
+      "headline": "Exponential growth.",
+      "headlineGradient": "Invite only.",
+      "descriptionBold": "Less than 1% of advertisers have access to Axon.",
+      "description": "They benefit from scale and efficiency without intense competition for customers. A subset of them can invite their most trusted friends and peers to join.",
+      "videoSrc": "/videos/LP-header-animation-small.mp4"
+    },
+    "attention": {
+      "headline": "Capture undivided attention",
+      "descriptionBold": "Axon ads are full-screen videos paired with Axon Interactive Pages and dynamic product ads.",
+      "description": "They're watched for an average of 35 seconds - that's longer than most TV commercials and blows other ad platforms out of the water.",
+      "videoSrc": "/videos/axon-ad-experience.mp4"
+    },
+    "videoShowcase": {
+      "headline": "Axon in action",
+      "videoSrc": "/videos/Axon_LP_Video_Landscape.mp4"
     },
     "finalCta": {
-      "headline": "Ready to Transform Your Advertising?",
-      "subhead": "Join the next generation of performance marketers on Axon.",
-      "cta": "Request Early Access"
+      "headline": "Get $5K in ad credit",
+      "subhead": "When you spend $5K within your first 60 days.",
+      "cta": "Get started"
     }
   },
   "variant1": {
@@ -46,31 +140,13 @@
         "Full transparency into placement quality and inventory sources",
         "Real-time campaign analytics and automated budget allocation"
       ],
-      "cta": "Launch Your Campaign"
+      "cta": "Launch Your Campaign",
+      "videoSrc": "/videos/LP-header-animation-small.mp4"
     },
-    "trustBar": {
-      "heading": "Trusted by leading performance teams",
-      "logos": ["Spotify", "DoorDash", "Instacart", "Zynga", "Scopely", "Roblox"]
-    },
-    "howItWorks": {
-      "heading": "Launch in 3 Simple Steps",
-      "steps": [
-        {
-          "number": "01",
-          "title": "Define Your Goals",
-          "description": "Set your CPA or ROAS targets and select your audience segments."
-        },
-        {
-          "number": "02",
-          "title": "AI Optimizes in Real Time",
-          "description": "Axon's predictive engine bids on the highest-value impressions across all channels."
-        },
-        {
-          "number": "03",
-          "title": "Scale What Works",
-          "description": "Automatically shift budget to top-performing placements and scale with confidence."
-        }
-      ]
+    "attention": {
+      "headline": "Capture undivided attention",
+      "description": "Axon ads are full-screen videos paired with Axon Interactive Pages and dynamic product ads. They're watched for an average of 35 seconds - that's longer than most TV commercials and blows other ad platforms out of the water.",
+      "videoSrc": "/videos/axon-ad-experience.mp4"
     },
     "inventoryClarity": {
       "heading": "Premium Inventory Across Every Channel",
@@ -115,24 +191,13 @@
       "headline": "Advertisers on Axon See 40% Lower CPA on Average",
       "subhead": "Join thousands of performance marketers who trust Axon to deliver measurable ROI across every channel.",
       "bullets": [],
-      "cta": "Start Growing Your ROI"
+      "cta": "Start Growing Your ROI",
+      "videoSrc": "/videos/LP-header-animation-small.mp4"
     },
     "socialProof": {
-      "heading": "Trusted by the World's Top Advertisers",
-      "logos": [
-        "Spotify",
-        "DoorDash",
-        "Instacart",
-        "Zynga",
-        "Scopely",
-        "Roblox",
-        "Moloco",
-        "Liftoff",
-        "Unity",
-        "ironSource"
-      ]
+      "heading": "Trusted by the World's Top Advertisers"
     },
-    "testimonial": {
+    "testimonialSpotlight": {
       "quote": "Axon cut our CPA by 35% in the first month while scaling spend 3x. The predictive bidding engine outperforms everything we've tested.",
       "author": "Sarah Chen",
       "role": "VP of Growth",
@@ -145,26 +210,6 @@
         { "value": "3.2x", "label": "Average ROAS" },
         { "value": "1B+", "label": "Users Reached Monthly" },
         { "value": "98%", "label": "Client Retention Rate" }
-      ]
-    },
-    "howItWorks": {
-      "heading": "How Axon Delivers Results",
-      "steps": [
-        {
-          "number": "01",
-          "title": "Set Your KPIs",
-          "description": "Tell us your CPA, ROAS, or growth targets and we'll build your strategy."
-        },
-        {
-          "number": "02",
-          "title": "AI Finds the Best Opportunities",
-          "description": "Our engine analyzes billions of signals to bid on the highest-converting impressions."
-        },
-        {
-          "number": "03",
-          "title": "Watch Your ROI Grow",
-          "description": "Track results in real time and see your performance improve week over week."
-        }
       ]
     },
     "productOverview": {

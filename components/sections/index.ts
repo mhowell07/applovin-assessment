@@ -1,4 +1,13 @@
+export { default as Header } from "./Header";
 export { default as Hero } from "./Hero";
+export { default as InviteOnly } from "./InviteOnly";
+export { default as Attention } from "./Attention";
+export { default as Referral } from "./Referral";
+export { default as Process } from "./Process";
+export { default as VideoShowcase } from "./VideoShowcase";
+export { default as Testimonials } from "./Testimonials";
+export { default as FinalCta } from "./FinalCta";
+export { default as Footer } from "./Footer";
 export { default as TrustBar } from "./TrustBar";
 export { default as HowItWorks } from "./HowItWorks";
 export { default as InventoryClarity } from "./InventoryClarity";
@@ -7,4 +16,3 @@ export { default as SocialProof } from "./SocialProof";
 export { default as TestimonialSpotlight } from "./TestimonialSpotlight";
 export { default as PerformanceMetrics } from "./PerformanceMetrics";
 export { default as ProductOverview } from "./ProductOverview";
-export { default as FinalCta } from "./FinalCta";

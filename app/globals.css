@@ -1,8 +1,36 @@
 @import "tailwindcss";
 
 /* ============================================
+   Mont Font Family (from Axon brand)
+   ============================================ */
+
+@font-face {
+  font-family: "Mont";
+  src: url("/fonts/Mont/MontRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("/fonts/Mont/MontSemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Mont";
+  src: url("/fonts/Mont/MontBold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
    Axon.AI Brand Theme
-   Dark theme with purple accents
+   Dark theme with blue accents
    Matches: https://axon.ai/en/inviteonly
    ============================================ */
 
@@ -12,10 +40,10 @@
   --surface: #131316;
   --surface-raised: #1c1c22;
 
-  /* Purple accent palette */
-  --primary: #8b5cf6;
-  --primary-hover: #a78bfa;
-  --primary-muted: rgba(139, 92, 246, 0.15);
+  /* Blue accent palette (matches Axon brand) */
+  --primary: #68A7FF;
+  --primary-hover: #8BBBFF;
+  --primary-muted: rgba(104, 167, 255, 0.15);
 
   /* Text hierarchy */
   --foreground: #fafafa;
@@ -27,10 +55,10 @@
   --border-light: #3f3f46;
 
   /* Gradients */
-  --gradient-purple: linear-gradient(135deg, #7c3aed, #6d28d9);
+  --gradient-accent: linear-gradient(90deg, #FFF 0%, #68A7FF 100%);
   --gradient-hero: linear-gradient(
     180deg,
-    rgba(139, 92, 246, 0.08) 0%,
+    rgba(104, 167, 255, 0.08) 0%,
     transparent 60%
   );
 }
@@ -75,7 +103,7 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  font-family: "Mont", system-ui, -apple-system, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -84,29 +112,12 @@ body {
    Utility classes for brand patterns
    ============================================ */
 
-/* Purple gradient text */
+/* Axon gradient text (white to blue) */
 .text-gradient {
-  background: linear-gradient(135deg, #a78bfa, #7c3aed);
+  background: linear-gradient(90deg, #FFF 0%, #68A7FF 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-}
-
-/* Subtle purple glow behind hero sections */
-.glow-purple {
-  position: relative;
-}
-.glow-purple::before {
-  content: "";
-  position: absolute;
-  inset: -20% -10%;
-  background: radial-gradient(
-    ellipse at 50% 0%,
-    rgba(139, 92, 246, 0.12) 0%,
-    transparent 70%
-  );
-  pointer-events: none;
-  z-index: 0;
 }
 
 /* Card hover lift */
@@ -115,5 +126,27 @@ body {
 }
 .card-hover:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.1);
+  box-shadow: 0 8px 30px rgba(104, 167, 255, 0.1);
+}
+
+/* Marquee animation for brand logos */
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+/* Hide scrollbar */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
 }
